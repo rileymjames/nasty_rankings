@@ -12,8 +12,8 @@ The "nasty-score" is then given by the probability from the swing model multipli
 ## About the model
 This analysis uses XGBoost, a gradient boosting machine learning algorithm, to estimate the probabilities described above. Each model was trained and tested on a split of pitch data from 2010 to present, a total of 8,236,183 pitches from 2,500 different pitchers.
 
-The label and features of each model are shown below:
-| Model | Label | Feature |
+Table 1. Model labels and features
+| Model | Label | Features |
 | --- | --- | --- |
 | Strikezone | Called balls and strikes | Effective speed, directional movement, directional velocity, directional acceleration, release position |
 | Swing | Swing event | Effective speed, directional movement, directional velocity, directional acceleration, spin rate, strikezone probability |
@@ -26,7 +26,7 @@ The models are trained in the ``model_selection.py`` code.
 ## Results
 After training, the model is used to rank each pitch from the 2021 season. Results can also be found in the ``Rank 2021 pitchers.ipynb`` notebook.
 
-Table 1. Top 10 nastiest pitches* throughout the 2021 season, 100 pitch minumum
+Table 2. Top 10 nastiest pitches* throughout the 2021 season, 100 pitch minumum
 | player_name        | pitch_type   |   avg_release_speed |   avg_release_spin_rate |   pitch_count |   nasty_score |
 |:-------------------|:-------------|--------------------:|------------------------:|--------------:|--------------:|
 | Martin, Chris      | SL           |             83.4826 |                 2496.34 |           109 |       42.1304 |
@@ -41,7 +41,7 @@ Table 1. Top 10 nastiest pitches* throughout the 2021 season, 100 pitch minumum
 | Gibson, Kyle       | SL           |             83.4665 |                 2513.55 |           462 |       39.5484 |
 * Values are averages over all pitches thrown of each type 
 
-Table 2. Top 10 nastiest pitchers throughout the 2021 season, 400 pitch minimum
+Table 3. Top 10 nastiest pitchers throughout the 2021 season, 400 pitch minimum
 | player_name     |   nasty_score |   pitch_count |
 |:----------------|--------------:|--------------:|
 | Jackson, Luke   |       30.8664 |          1204 |
@@ -55,7 +55,7 @@ Table 2. Top 10 nastiest pitchers throughout the 2021 season, 400 pitch minimum
 | McGowin, Kyle   |       26.7913 |           517 |
 | Pagán, Emilio   |       26.4082 |          1098 |
 
-Table 3. Top 10 nastiest games throughout the 2021 season, 50 pitch minimum
+Table 4. Top 10 nastiest games throughout the 2021 season, 50 pitch minimum
 | player_name     | game_date           |   nasty_score |   pitch_count |
 |:----------------|:--------------------|--------------:|--------------:|
 | Musgrove, Joe   | 2021-05-08 00:00:00 |       34.0255 |            90 |
@@ -76,6 +76,7 @@ The banning of sticky-stuff effected teams and players across baseball, leading 
 
 Table 5. Percent of pitchers pre-sticky-stuff
 | Top n pitches | % of pitches pre-sticky-stuff ban |
+| --- | --- |
 | 50 | 74.0% |
 | 100 | 63.0% |
 | 500 | 56.6% |
@@ -87,6 +88,6 @@ Table 5. Percent of pitchers pre-sticky-stuff
 Of the 100 nastiest pitches thrown in 2021, over 60% were before the ban, while under 50% of the top 10,000 pitches were pre-ban. Of the elite pitches thrown this season, the overwhelming majority benefited from the use of sticky-stuff.
 
 Figure 1. Nasty score over time
-![alt text](https://github.com/rileymjames/nasty_rankings/blob/images/nasty_plot.jpg?raw=true)
+![alt text](https://github.com/rileymjames/nasty_rankings/blob/main/images/nasty_plot.jpeg)
 
 
