@@ -76,7 +76,7 @@ The banning of sticky-stuff effected teams and players across baseball, leading 
 
 Table 5. Percent of pitchers pre-sticky-stuff
 | Top n pitches | % of pitches pre-sticky-stuff ban |
-| --- | --- |
+| --- | --: |
 | 50 | 74.0% |
 | 100 | 63.0% |
 | 500 | 56.6% |
