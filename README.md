@@ -72,7 +72,7 @@ Table 4. Top 10 nastiest games throughout the 2021 season, 50 pitch minimum
 ## Sticky-stuff
 The biggest controversy of the 2021 baseball season was the widespread use and then banning of a substance called "sticky-stuff" or "spidertack". This extremely sticky substance allowed pitchers to get more grip on the ball, increasing spin rate and movement. After recieving negative player and media attention on the subject throughout late May and early June, MLB put rules in place to ban the use of sticky stuff on June 21. This analysis is also available in the ``Sticky-stuff analysis.ipynb`` notebook.
 
-The banning of sticky-stuff effected teams and players across baseball, leading to more offense overall throughout the league. Without sticky-stuff, "stuff" and "nastiest" went down significantly.
+The banning of sticky-stuff effected teams and players across baseball, leading to more offense overall throughout the league. Without sticky-stuff, "stuff" and "nastiness" went down significantly.
 
 Table 5. Percent of pitchers pre-sticky-stuff
 | Top n pitches | % of pitches pre-sticky-stuff ban |
