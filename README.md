@@ -90,4 +90,4 @@ Of the 100 nastiest pitches thrown in 2021, over 60% were before the ban, while 
 Figure 1. Nasty score over time
 ![alt text](https://github.com/rileymjames/nasty_rankings/blob/main/images/nasty_plot.jpeg)
 
-
+There is a clear drop off in pitch nastiness in the beginning of June, when the sticky-stuff controversy was reaching a peak, until June 21 when the ban went into place. Also interesting is the spike in nastiness during the playoffs. After the worst teams, with the worst pitchers, are eliminated, it leaves only elite playoff caliber players, causing a spike in the average nastiness.
