@@ -38,6 +38,8 @@ def prepare_data(path):
     # create a called strike flag
     data['strike'] = data.description.str.contains('called_strike').astype(int)
 
+    data = data.fillna(-9999)
+
     return data.copy()
 
 
@@ -95,9 +97,6 @@ def strikezone_model(data):
     x_cols = ['effective_speed', 'pfx_x', 'pfx_z', 'vx0', 'vz0', 'ax',
               'az', 'release_pos_x', 'release_pos_z']
 
-    data = data.dropna(subset=[label_col] + x_cols)\
-        .reset_index(drop=True)
-
     # prepare X and y
     y = np.array(data[label_col])
     X = np.array(data[x_cols])
@@ -134,8 +133,6 @@ def swing_model(data, sz_model):
     sz_model_cols = ['effective_speed', 'pfx_x', 'pfx_z', 'vx0', 'vz0', 'ax',
                      'az', 'release_pos_x', 'release_pos_z']
 
-    data = data.dropna(subset=sz_model_cols).reset_index(drop=True)
-
     X_sz = np.array(data[sz_model_cols])
     data['strikezone_prob'] = sz_model.predict(X_sz)
 
@@ -143,9 +140,6 @@ def swing_model(data, sz_model):
     label_col = 'swing'
     x_cols = ['release_spin_rate', 'effective_speed', 'pfx_x', 'pfx_z', 'vx0',
               'vy0', 'vz0', 'ax', 'ay', 'az', 'spin_axis', 'strikezone_prob']
-
-    data = data.dropna(subset=[label_col] + x_cols)\
-        .reset_index(drop=True)
 
     # prepare X and y
     y = np.array(data[label_col])
@@ -186,18 +180,13 @@ def swingmiss_model(data, sz_model):
     sz_model_cols = ['effective_speed', 'pfx_x', 'pfx_z', 'vx0', 'vz0', 'ax',
                      'az', 'release_pos_x', 'release_pos_z']
 
-    data = data.dropna(subset=sz_model_cols).reset_index(drop=True)
-
     X_sz = np.array(data[sz_model_cols])
     data['strikezone_prob'] = sz_model.predict(X_sz)
 
     # define label and features
-    label_col = 'swing'
+    label_col = 'swinging_strike'
     x_cols = ['release_spin_rate', 'effective_speed', 'pfx_x', 'pfx_z', 'vx0',
               'vy0', 'vz0', 'ax', 'ay', 'az', 'spin_axis', 'strikezone_prob']
-
-    data = data.dropna(subset=[label_col] + x_cols)\
-        .reset_index(drop=True)
 
     # prepare X and y
     y = np.array(data[label_col])

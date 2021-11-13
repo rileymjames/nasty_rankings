@@ -23,23 +23,22 @@ output_filetype = '.pkl'
 
 def main():
     # get data
-    data = ms.prepare_data(input_dir + '/nasty_data.fea')
+    data = ms.prepare_data(input_dir + '/nasty_data.fea').sample(frac=.5)
 
     print('Developing strikezone model...', '\n')
     sz_model = ms.strikezone_model(data)
 
-    print('Developing swing model...', '\n')
-    swing_model = ms.swing_model(data, sz_model)
-
-    print('Developing swing and miss model...', '\n')
-    swingmiss_model = ms.swingmiss_model(data, sz_model)
-
-    # save models
     with open(output_dir + '/sz_model' + output_filetype, 'wb') as f:
         pickle.dump(sz_model, f)
 
+    print('Developing swing model...', '\n')
+    swing_model = ms.swing_model(data, sz_model)
+
     with open(output_dir + '/swing_model' + output_filetype, 'wb') as f:
         pickle.dump(swing_model, f)
+
+    print('Developing swing and miss model...', '\n')
+    swingmiss_model = ms.swingmiss_model(data, sz_model)
 
     with open(output_dir + '/swingmiss_model' + output_filetype, 'wb') as f:
         pickle.dump(swingmiss_model, f)
