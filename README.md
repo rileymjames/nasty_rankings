@@ -29,45 +29,45 @@ After training, the model is used to rank each pitch from the 2021 season. Resul
 Table 2. Top 10 nastiest pitches* throughout the 2021 season, 100 pitch minumum
 | player_name        | pitch_type   |   avg_release_speed |   avg_release_spin_rate |   pitch_count |   nasty_score |
 |:-------------------|:-------------|--------------------:|------------------------:|--------------:|--------------:|
-| Martin, Chris      | SL           |             83.4826 |                 2496.34 |           109 |       42.1304 |
-| Gallen, Zac        | SL           |             86.1486 |                 2467.82 |           179 |       41.9826 |
-| Treinen, Blake     | SL           |             86.5086 |                 2396.77 |           429 |       41.686  |
-| Jackson, Luke      | SL           |             87.6188 |                 2313.28 |           650 |       41.6773 |
-| Pineda, Michael    | SL           |             81.2269 |                 1890.67 |           494 |       41.2578 |
-| Melancon, Mark     | KC           |             82.2452 |                 2599.08 |           363 |       41.0571 |
-| Gallegos, Giovanny | SL           |             85.6004 |                 2482.92 |           534 |       40.6533 |
-| Glasnow, Tyler     | CU           |             83.5049 |                 2995.28 |           183 |       40.6457 |
-| Ginkel, Kevin      | SL           |             83.8469 |                 1892.06 |           224 |       39.9241 |
-| Gibson, Kyle       | SL           |             83.4665 |                 2513.55 |           462 |       39.5484 |
+| Treinen, Blake     | SL           |             86.5086 |                 2396.77 |           429 |       45.8778 |
+| Gallegos, Giovanny | SL           |             85.6004 |                 2482.92 |           534 |       43.8524 |
+| Snell, Blake       | SL           |             86.5274 |                 2394.91 |           572 |       43.7114 |
+| Rodón, Carlos      | SL           |             85.7038 |                 2431.17 |           626 |       43.3352 |
+| Gallen, Zac        | SL           |             86.1486 |                 2467.82 |           179 |       43.237  |
+| Jackson, Luke      | SL           |             87.6188 |                 2313.28 |           650 |       42.0988 |
+| Pineda, Michael    | SL           |             81.2269 |                 1890.67 |           494 |       41.436  |
+| Kittredge, Andrew  | SL           |             88.923  |                 2720.39 |           453 |       41.2838 |
+| Chafin, Andrew     | SL           |             82.4624 |                 2407.47 |           250 |       41.2607 |
+| Feyereisen, J.P.   | CH           |             87.6194 |                 1476.11 |           201 |       40.953  |
 * Values are averages over all pitches thrown of each type 
 
 Table 3. Top 10 nastiest pitchers throughout the 2021 season, 400 pitch minimum
 | player_name     |   nasty_score |   pitch_count |
 |:----------------|--------------:|--------------:|
-| Jackson, Luke   |       30.8664 |          1204 |
-| Glasnow, Tyler  |       29.5164 |          1339 |
-| deGrom, Jacob   |       28.6884 |          1226 |
-| Scott, Tanner   |       28.4809 |          1032 |
-| Anderson, Shaun |       27.6063 |           437 |
-| Musgrove, Joe   |       27.5701 |          2938 |
-| Clase, Emmanuel |       27.3388 |          1057 |
-| Doval, Camilo   |       26.9649 |           499 |
-| McGowin, Kyle   |       26.7913 |           517 |
-| Pagán, Emilio   |       26.4082 |          1098 |
+| deGrom, Jacob   |       34.4525 |          1226 |
+| Williams, Devin |       31.8472 |           993 |
+| Hendriks, Liam  |       31.6064 |          1172 |
+| Kimbrel, Craig  |       30.8858 |          1055 |
+| Jackson, Luke   |       30.8253 |          1204 |
+| Hader, Josh     |       30.7058 |           995 |
+| Kopech, Michael |       29.8174 |          1225 |
+| Scott, Tanner   |       29.6267 |          1032 |
+| Glasnow, Tyler  |       28.3243 |          1339 |
+| Pagán, Emilio   |       28.1704 |          1098 |
 
 Table 4. Top 10 nastiest games throughout the 2021 season, 50 pitch minimum
 | player_name     | game_date           |   nasty_score |   pitch_count |
 |:----------------|:--------------------|--------------:|--------------:|
-| Musgrove, Joe   | 2021-05-08 00:00:00 |       34.0255 |            90 |
-| Musgrove, Joe   | 2021-09-10 00:00:00 |       33.5874 |           106 |
-| deGrom, Jacob   | 2021-06-16 00:00:00 |       33.5733 |            51 |
-| deGrom, Jacob   | 2021-05-31 00:00:00 |       33.3269 |            70 |
-| Musgrove, Joe   | 2021-04-19 00:00:00 |       33.2768 |            96 |
-| Rasmussen, Drew | 2021-08-06 00:00:00 |       33.2465 |            53 |
-| Glasnow, Tyler  | 2021-05-26 00:00:00 |       32.3265 |           102 |
-| Glasnow, Tyler  | 2021-04-01 00:00:00 |       32.3097 |            77 |
-| deGrom, Jacob   | 2021-06-11 00:00:00 |       32.1563 |            80 |
-| Musgrove, Joe   | 2021-07-29 00:00:00 |       32.1233 |            91 |
+| deGrom, Jacob   | 2021-06-11 00:00:00 |       40.2499 |            80 |
+| deGrom, Jacob   | 2021-05-31 00:00:00 |       39.086  |            70 |
+| deGrom, Jacob   | 2021-06-16 00:00:00 |       38.2419 |            51 |
+| deGrom, Jacob   | 2021-04-23 00:00:00 |       38.2166 |           109 |
+| deGrom, Jacob   | 2021-04-05 00:00:00 |       36.8351 |            77 |
+| Kopech, Michael | 2021-10-03 00:00:00 |       36.2085 |            51 |
+| deGrom, Jacob   | 2021-05-25 00:00:00 |       35.2737 |            63 |
+| deGrom, Jacob   | 2021-04-10 00:00:00 |       35.158  |            95 |
+| deGrom, Jacob   | 2021-04-17 00:00:00 |       34.1791 |            99 |
+| deGrom, Jacob   | 2021-04-28 00:00:00 |       33.2557 |            93 |
 
 ## Sticky-stuff
 The biggest controversy of the 2021 baseball season was the widespread use and then banning of a substance called "sticky-stuff" or "spidertack". This extremely sticky substance allowed pitchers to get more grip on the ball, increasing spin rate and movement. After recieving negative player and media attention on the subject throughout late May and early June, MLB put rules in place to ban the use of sticky stuff on June 21. This analysis is also available in the ``Sticky-stuff analysis.ipynb`` notebook.
@@ -77,15 +77,15 @@ The banning of sticky-stuff effected teams and players across baseball, leading 
 Table 5. Percent of pitchers pre-sticky-stuff
 | Top n pitches | % of pitches pre-sticky-stuff ban |
 | --- | --: |
-| 50 | 74.0% |
-| 100 | 63.0% |
-| 500 | 56.6% |
-| 2500 | 50.6% |
-| 10000 | 46.5% |
-| 50000 | 45.2% |
+| 50 | 62.0% |
+| 100 | 60.0% |
+| 500 | 47.8% |
+| 2500 | 48.2% |
+| 10000 | 47.0% |
+| 50000 | 44.7% |
 | 500000 | 43.4% |
 
-Of the 100 nastiest pitches thrown in 2021, over 60% were before the ban, while under 50% of the top 10,000 pitches were pre-ban. Of the elite pitches thrown this season, the overwhelming majority benefited from the use of sticky-stuff.
+Of the 100 nastiest pitches thrown in 2021, 60% were before the ban, while under 50% of the top 10,000 pitches were pre-ban. Of the elite pitches thrown this season, the  majority benefited from the use of sticky-stuff.
 
 Figure 1. Nasty score over time
 ![alt text](https://github.com/rileymjames/nasty_rankings/blob/main/images/nasty_plot.jpeg)
