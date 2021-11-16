@@ -123,7 +123,7 @@ def strikezone_model(data):
 
     evaluation = [(X_train, y_train), (X_test, y_test)]
     model.fit(X_train, y_train, eval_set=evaluation, eval_metric='auc',
-              early_stopping_round=10, verbose=False)
+              early_stopping_rounds=10, verbose=False)
 
     return model
 
